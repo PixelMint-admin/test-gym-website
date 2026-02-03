@@ -1,111 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PowerFit Gym</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000;
-      color: #fff;
-    }
-    header {
-      background-color: #FFD700;
-      color: #000;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      background-color: #111;
-      display: flex;
-      justify-content: center;
-      padding: 10px;
-    }
-    nav a {
-      color: #FFD700;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1') no-repeat center center/cover;
-      height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #fff;
-    }
-    .hero h1 {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 20px;
-      border-radius: 10px;
-    }
-    .content {
-      padding: 40px 20px;
-      background-color: #000;
-    }
-    .content h2 {
-      color: #FFD700;
-    }
-    .content p {
-      max-width: 800px;
-      margin: auto;
-    }
-    .footer {
-      background-color: #111;
-      color: #FFD700;
-      text-align: center;
-      padding: 15px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background-color: white;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border: 1px solid #eaeaea;
+        }
+        
+        .error-code {
+            font-size: 4rem;
+            font-weight: 700;
+            color: #d32f2f;
+            margin-bottom: 10px;
+            line-height: 1;
+        }
+        
+        .error-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .error-message {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .search-box {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            border: 1px solid #eaeaea;
+        }
+        
+        .search-box input {
+            width: 100%;
+            padding: 12px 16px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        
+        .search-box button {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        .search-box button:hover {
+            background-color: #0d62d9;
+        }
+        
+        .action-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .action-links a {
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        
+        .primary-link {
+            background-color: #1a73e8;
+            color: white;
+        }
+        
+        .primary-link:hover {
+            background-color: #0d62d9;
+        }
+        
+        .secondary-link {
+            background-color: #f1f3f4;
+            color: #333;
+            border: 1px solid #dadce0;
+        }
+        
+        .secondary-link:hover {
+            background-color: #e8eaed;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            .error-code {
+                font-size: 3rem;
+            }
+            
+            .error-title {
+                font-size: 1.5rem;
+            }
+            
+            .action-links {
+                flex-direction: column;
+            }
+            
+            .action-links a {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>PowerFit Gym</h1>
-    <p>Train Hard. Stay Strong. Be Unstoppable.</p>
-  </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#membership">Membership</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section class="hero">
-    <h1>Welcome to Your New Fitness Journey</h1>
-  </section>
-
-  <section class="content" id="about">
-    <h2>About Us</h2>
-    <p>PowerFit Gym is your ultimate fitness destination. With top-of-the-line equipment, certified trainers, and a motivating atmosphere, we're here to help you transform your body and mind.</p>
-  </section>
-
-  <section class="content" id="services">
-    <h2>Our Services</h2>
-    <p>We offer personalized training programs, group fitness classes, weight loss coaching, bodybuilding routines, and 24/7 gym access.</p>
-  </section>
-
-  <section class="content" id="membership">
-    <h2>Membership Plans</h2>
-    <p>Choose from flexible membership options including monthly, quarterly, and annual plans. Special discounts for students and corporate groups.</p>
-  </section>
-
-  <section class="content" id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: info@powerfitgym.com<br>
-       Phone: +91 98765 43210<br>
-       Location: MG Road, Kochi, Kerala</p>
-  </section>
-
-  <div class="footer">
-    <p>&copy; 2025 PowerFit Gym. All rights reserved.</p>
-  </div>
+    <div class="container">
+        <div class="error-code">404</div>
+        <div class="error-title">Page Not Found</div>
+        
+        <div class="error-message">
+            The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
+        </div>
+      
+    
+    <script>
+        // Simple back button functionality
+        document.querySelectorAll('.secondary-link')[0].addEventListener('click', function(e) {
+            e.preventDefault();
+            if (window.history.length > 1) {
+                window.history.back();
+            } else {
+                window.location.href = '/';
+            }
+        });
+        
+        // Simple search functionality
+        document.querySelector('button').addEventListener('click', function() {
+            const query = document.querySelector('input').value;
+            if (query.trim()) {
+                alert('Searching for: ' + query);
+                // In a real implementation, this would redirect to a search results page
+                // window.location.href = '/search?q=' + encodeURIComponent(query);
+            }
+        });
+        
+        // Allow Enter key to trigger search
+        document.querySelector('input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                document.querySelector('button').click();
+            }
+        });
+    </script>
 </body>
 </html>
